@@ -34,6 +34,7 @@ public class Task<T> {
                 exceptionTrowed = true;
             } finally {
                 isRunning = false;
+                notifyAll();
             }
 
 
